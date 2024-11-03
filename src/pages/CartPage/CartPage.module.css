@@ -1,0 +1,133 @@
+.container {
+  margin-top: 70px;
+  padding: 20px;
+  font-family: Arial, sans-serif; /* Ensure consistent font across browsers */
+}
+
+.tableContainer {
+  overflow-x: auto; /* Allows horizontal scroll on small screens */
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th, .table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center; /* Center text for better readability */
+}
+
+.table th {
+  background-color: #f4f4f4;
+  text-align: left;
+}
+
+.table td {
+  vertical-align: middle; /* Align content vertically in the middle */
+}
+
+.productImage {
+  width: 100px; /* Adjust width as needed */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 4px; /* Rounded corners for images */
+}
+
+@media (max-width: 768px) {
+  .table th, .table td {
+      display: block;
+      width: 100%;
+      box-sizing: border-box;
+      padding: 10px 5px; /* Adjust padding for better fit on small screens */
+  }
+
+  .table thead {
+      display: none; /* Hide the header on small screens */
+  }
+
+  .table tr {
+      margin-bottom: 10px;
+      display: block;
+      border-bottom: 2px solid #ddd;
+  }
+
+  .table td {
+      padding: 10px 0;
+      position: relative;
+      border-bottom: 1px solid #ddd;
+  }
+
+  .table td::before {
+      content: attr(data-label);
+      position: absolute;
+      left: 0;
+      width: 50%;
+      padding-right: 10px;
+      white-space: nowrap;
+      font-weight: bold;
+      background-color: #f4f4f4;
+      border-right: 1px solid #ddd;
+  }
+}
+
+.quantityContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center items within the container */
+}
+
+.quantityInput {
+  width: 60px;
+  text-align: center;
+  margin: 0 10px;
+  border: 1px solid #ddd; /* Add border to input for better visibility */
+  border-radius: 4px; /* Rounded corners for input */
+}
+
+.icon {
+  cursor: pointer;
+  font-size: 20px;
+  margin: 0 5px; /* Space between icons */
+  color: #333; /* Color for better contrast */
+  transition: color 0.3s; /* Smooth color transition on hover */
+}
+
+.icon:hover {
+  color: #007bff; /* Change color on hover */
+}
+
+/* Add styles for the loading and error messages */
+p {
+  text-align: center;
+  font-size: 18px;
+  color: #666;
+}
+
+/* Summary Container Styles */
+.summaryContainer {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.total {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.checkoutButton {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff; /* Primary color for the button */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s; /* Smooth color transition on hover */
+}
+
+.checkoutButton:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}

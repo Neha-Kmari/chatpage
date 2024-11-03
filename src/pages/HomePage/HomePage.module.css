@@ -1,0 +1,99 @@
+.homePage {
+    padding-top: 75px; /* Ensure space for fixed header */
+  }
+  
+  
+  .sliderImage {
+    width: 100%; /* Full width of the image */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Cover the container while maintaining aspect ratio */
+  }
+  
+  /* Card Grid styles */
+  .cardGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid layout */
+    gap: 16px; /* Space between cards */
+    padding: 16px;
+  }
+  
+  .card {
+    background-color: #F0F0F0;
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden; /* Hide overflow for cleaner look */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .cardImage {
+    width: 100%; /* Full width of the card */
+    height: 200px; /* Consistent height for all images */
+    object-fit: cover; /* Maintain aspect ratio and fill the container */
+  }
+  
+  .cardContent {
+    padding: 16px;
+  }
+  
+  .cardTitle {
+    color: rgb(31, 28, 28);
+    margin: 0 0 8px 0; /* Margin at the bottom */
+    font-size: 1.2rem; /* Font size for the title */
+    /* font-size: 1rem; */
+  display: -webkit-box;
+  -webkit-line-clamp: 1; /* Number of lines to show */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis; /* Add ellipsis for overflow */
+  }
+  
+  .cardDescription {
+    color: rgb(29, 27, 27);
+    font-size: 1rem;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 1024px) {
+    .sliderImage {
+      height: 60vh; /* Adjust height for tablets and smaller desktops */
+    }
+  
+    .card {
+      /* flex-direction: row; */
+
+       /* Stack content horizontally if needed */
+    }
+  
+    .cardImage {
+      height: 150px; /* Adjust image height for tablets */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .sliderImage {
+      height: 50vh; /* Adjust height for smaller tablets and mobile devices */
+    }
+  
+    .cardGrid {
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Adjust grid for smaller screens */
+    }
+  
+    .cardImage {
+      height: 120px; /* Adjust image height for mobile devices */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .sliderImage {
+      height: 40vh; /* Further adjust height for very small screens */
+    }
+  
+    .cardTitle {
+      font-size: 1rem; /* Reduce font size for smaller screens */
+    }
+  
+    .cardDescription {
+      font-size: 0.9rem; /* Reduce font size for smaller screens */
+    }
+  }
+  

@@ -1,0 +1,66 @@
+.container {
+    margin: 20px;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .profileHeader {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .profilePicture {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ddd;
+  }
+  
+  .userName {
+    font-size: 24px;
+    margin: 10px 0;
+  }
+  
+  .userInfo {
+    margin: 20px 0;
+  }
+  
+  .userInfo p {
+    font-size: 18px;
+    margin: 5px 0;
+  }
+  
+  .editButton {
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .editButton:hover {
+    background-color: #0056b3;
+  }
+  
+  @media (max-width: 768px) {
+    .profileHeader {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .userInfo p {
+      font-size: 16px;
+    }
+  }
+  

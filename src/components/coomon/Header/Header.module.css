@@ -1,0 +1,163 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    align-items: center; /* Align items vertically center */
+    padding: 0px 35px; /* Add some padding for better spacing */
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    position: fixed;
+    left: 0;
+    box-sizing: border-box;
+    z-index: 1000;
+  }
+  
+  .logo {
+
+  flex: 1;
+    /* display: flex; */
+    /* align-items: center; Align items vertically center */
+    /* flex: 1; Allow logo to take up available space */
+  }
+ 
+  .navIconList{
+    display: flex;
+  }
+  
+  .logo h1 {
+    margin-right: 20px; /* Space between logo and navigation links */
+    font-size: 1.5rem; /* Font size for better readability */
+  }
+  
+  .menuToggle {
+    display: none; /* Hide the menu toggle by default */
+  }
+  
+  .hamburger {
+    height: 15px; /* Adjust size of hamburger icon */
+    cursor: pointer; /* Show pointer cursor */
+  }
+  
+  .navList {
+    list-style-type: none;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    display: flex; /* Display navigation items inline */
+    margin-left: 60px; /* Space to the left of the navigation list */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  }
+  
+  .navList li {
+    display: inline;
+    margin-right: 15px; /* Space between navigation links */
+  }
+  
+  .navList a {
+    text-decoration: none;
+    color: black;
+    padding: 10px; /* Adjust padding for better spacing */
+  }
+  
+  /* Icon styles */
+  .icons {
+    display: flex;
+  }
+  
+  .iconList {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .iconList li {
+    margin-left: 35px; /* Space between icons */
+  }
+  
+  .icon {
+    height: 22px; /* Adjust the size of icons */
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 1024px) {
+    .logo h1 {
+      font-size: 1.4rem; /* Adjust font size for tablets and small desktops */
+    }
+  
+    .navList {
+      margin-left: 0; /* Remove left margin on smaller screens */
+      text-align: center; /* Center align navigation links */
+      width: 100%; /* Full width for navigation links */
+    }
+  
+    .navList li {
+      display: inline-block; /* Stack navigation items vertically if needed */
+      margin-right: 10px; /* Reduce space between items */
+    }
+  
+    .icons {
+      margin-top: 10px; /* Space between navigation and icons */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .header {
+      /* flex-direction: row; Stack header items vertically/// */
+      /* align-items: flex-start; Align items to the start */
+      padding: 0px 20px; /* Adjust padding for smaller screens */
+    }
+  
+    .menuToggle {
+      display: block; /* Show the menu toggle on smaller screens */
+    }
+  
+    .navIconList{
+    }
+
+
+    .navList {
+      display: none; /* Hide navigation links by default */
+      flex-direction: column; /* Stack navigation items vertically */
+      width: 100%; /* Full width for navigation links */
+      text-align: center; /* Center align navigation links */
+      margin: 0; /* Remove margin */
+    }
+  
+    .navList.showMenu {
+      display: flex; /* Show navigation links when menu is open */
+    }
+  
+    .navList li {
+      margin-bottom: 10px; /* Space between items */
+      margin-right: 0; /* Remove right margin */
+    }
+  
+    .logo{
+      margin-left: 55px;
+    }
+    .iconList {
+      justify-content: center; /* Center align icons */
+    }
+  
+    .iconList li {
+      margin-left: 15px; /* Reduce space between icons */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hamburger {
+      height: 18px; /* Adjust size of hamburger icon */
+      cursor: pointer; /* Show pointer cursor */
+    }
+
+    .logo h1 {
+      font-size: 1.2rem; /* Further adjust font size for very small screens */
+    }
+  
+    .icon {
+      height: 18px; /* Adjust icon size for very small screens */
+    }
+  }
+  

@@ -1,0 +1,48 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin-top: 70px;
+  }
+  
+  .imageContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .thumbnail {
+    height: 400px;
+    margin-bottom: 20px;
+    object-fit: cover;
+  }
+  
+  .buttonContainer {
+    display: flex;
+    gap: 10px;
+  }
+/*   
+  .button {
+    padding: 10px;
+    font-size: larger;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .button:hover {
+    background-color: #0056b3;
+  }
+   */
+  .details {
+    text-align: center;
+  }
+  
+  .loading {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
